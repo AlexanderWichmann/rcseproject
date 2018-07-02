@@ -13,7 +13,7 @@
 
 // Servo position for Up and Down 
 const int penZUp = 110;
-const int penZDown = 90;
+const int penZDown = 85;
 
 // Servo on PWM pin 6
 const int penServoPin = 10;
@@ -82,7 +82,7 @@ void setup() {
   Serial.begin( 9600 );
   
   penServo.attach(penServoPin);
-  penServo.write(penZUp);
+  penServo.write(penZDown);
   delay(200);
 
   // Decrease if necessary
